@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light and Dark theme</title>
+
+      <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+       <!-- Style link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body id="myDIV" class="theme">
+    <div class="ex-parent">
+      <div class="ex-form-container">
+        <div class="ex-change-theme" >
+            <label class="switch" >
+                <input type="checkbox">
+                <span class="slider round" onclick="changetheme()"></span>
+              </label>
+              
+            <!-- <div class="ex-ch-round" onclick="changetheme()"><i class="fa fa-map-pin" aria-hidden="true"></i></div> -->
+        </div>
+        <div class="ex-form-section">
+            <p class="ex-sign-title">Sign in with</p>
+            <div class="ex-sign-type">
+                <div class="ex-sign-logo">
+                     <a href=""> <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </div>
+                <div class="ex-sign-logo">
+                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="ex-sign-logo">
+                     <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+
+            <div class="ex-line">
+                <p class="ex-bar-line"></p>
+                <p class="ex-or-text">or</p>
+            </div>
+
+            <div>
+                <form name="myform" method="get" class="ex-myform" action="display.html" onsubmit="return validate()">
+                    <input type="text" placeholder="Full Name" name="name"  id="name-field" class="ex-input"  >
+                    <p id="error_name" class="error-field"></p>
+                    <input type="text" placeholder="last Name" name="lastname"  id="last-field" class="ex-input"  >
+                    <p id="error_last_name" class="error-field"></p>
+                    <input type="text" placeholder="Mobile number or Email" id="info-field" class="ex-input" name="info" >
+                    <p id="error_email" class="error-field"></p>
+                    <div class="ex-field-box">
+                    <input type="password" placeholder="Password" class="ex-input" id="password-field" name="password" >
+                    <i class="fa fa-eye-slash bx-show" aria-hidden="true"></i>
+                </div>
+                    <p id="error_password" class="error-field"></p>
+                    <button type="submit" class="ex-sub-btn">Create Your Account</button>
+
+                </form>
+            </div>
+
+        </div>
+        <div class="ex-form-btm">
+            <p><sapn class="ex-btm-text">By signing up,you agree to our </sapn><span><a href="#"  class="ex-btm-link">Terms, Data Policy </a></span><span class="ex-btm-text" >and </span><span><a href="#"class="ex-btm-link">Cookie Policy</a></span></p>
+
+        </div>
+
+      </div>
+    </div>
+   <script src="js/script.js"></script>
+   <script>
+    console.log(window.pageYOffset);
+   </script>
+</body>
+</html>

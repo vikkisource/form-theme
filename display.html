@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <h2>Name: <span id="user-name"></span></h2>
+        <h2>Password: <span id="user-pass"></span></h2>
+        <h2>Email :<span id="user-mail"></span></h2>
+        <h4>Check for storage data:<span id="st-data"></span></h4>
+    </div>
+    <script >
+
+// function onLoad() {
+//     var url = document.location.href,
+//         params = url.split('?')[1].split('&'),
+//         data = {},
+//         tmp;
+//     for (var i = 0, l = params.length; i < l; i++) {
+//         tmp = params[i].split('=');
+//         data[tmp[0]] = tmp[1];
+//     }
+//     document.getElementById('user-name').innerHTML = data.name;
+//     document.getElementById('user-pass').innerHTML = data.password;
+//     document.getElementById('user-mail').innerHTML = data.info;
+// }
+  
+   document.getElementById('st-data').innerHTML = localStorage.getItem("verify");
+   document.getElementById('user-name').innerHTML =localStorage.getItem("firstname");
+  document.getElementById('user-mail').innerHTML =localStorage.getItem("email");
+  document.getElementById('user-pass').innerHTML =localStorage.getItem("password");
+
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
